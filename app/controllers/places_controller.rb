@@ -1,6 +1,6 @@
 class PlacesController < ApplicationController
   def index
-    @places = Place.all
+    @places = Place.page params[:page]
   end
 
   def new
@@ -18,12 +18,5 @@ class PlacesController < ApplicationController
     params.require(:place).permit(:name, :description, :address)
   end
 
-  #def self.search(term, page)
-  #  if term
-  #    where('name LIKE ?', "%#{term}%").order('id DESC').page(current_page)
-  #  else
-  #    order('id DESC').page(current_page)
-  #  end
-  #end
 
 end

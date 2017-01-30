@@ -1,6 +1,3 @@
-class Place < ApplicationRecord
+class Place < ActiveRecord::Base
+  paginates_per 5
 end
-
-#class Place < ActiveRecord::Base
-  #paginates_per 5
-#end
