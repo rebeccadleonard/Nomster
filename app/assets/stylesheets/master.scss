@@ -1,5 +1,6 @@
 @import "bootstrap";
 @import url('https://fonts.googleapis.com/css?family=Oswald');
+@import "font-awesome";
 
 body {
   background: image_url('restaurant.png');
@@ -33,4 +34,8 @@ h1, h2, h3, h4, h5, h6 {
   color: #A485C8;
   font-family: 'Oswald', sans-serif;
   font-size: 26px;
+}
+
+.fa {
+  color: #FFFFFF;
 }
