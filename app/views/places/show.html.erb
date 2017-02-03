@@ -4,7 +4,13 @@
   <br/><br/>
   <p><%= @place.description %></p>
   <div class="float-right">
-    <%= link_to 'Edit', edit_place_path(@place), class: 'btn btn-warning' %>
+    <!-- here -->
+    <% if current_user && current_user == @place.user %>
+    <!-- to here -->
+      <%= link_to 'Edit', edit_place_path(@place), class: 'btn btn-warning' %>
+    <!-- and here -->
+    <% end %> 
+    <!-- to here, are for single user editing. see places_controller for secondary code -->
     <%= link_to 'Destroy', place_path(@place), method: :delete, data: {confirm: 'Are you sure you want to delete this?'}, class: 'btn btn-danger' %>
   </div>
 </div>
