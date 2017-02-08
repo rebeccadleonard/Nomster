@@ -1,4 +1,9 @@
 source 'https://rubygems.org'
+
+gem 'figaro'
+
+gem 'geocoder'
+
 gem 'devise'
 
 gem 'font-awesome-rails'
