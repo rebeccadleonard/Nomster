@@ -28,6 +28,13 @@ h1, h2, h3, h4, h5, h6 {
   color: #FFFFFF;
 }
 
+.help-block {
+  color: #ff3333;
+  background-color: #FFEEEE;
+  border-radius: 3px;
+  padding: 2px 8px 2px 8px;
+}
+
 @media (max-width: 2500px) {
   .navbar {
     background: image_url('moulin.png');
