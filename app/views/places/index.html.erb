@@ -8,6 +8,16 @@
       <small><%= place.user.email %></small>
     <% end %>
 
+    <% if place.photos.present? %>
+      <div>
+        <blockquote>
+          <%= image_tag place.photos.last.picture %>
+          <%= place.photos.last.caption %>
+          <small><%= place.photos.last.user.email %></small>
+        </blockquote>
+      </div>
+    <% end %>
+
     <% if place.comments.present? %>
       <div>
         <blockquote>
