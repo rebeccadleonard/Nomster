@@ -11,7 +11,7 @@
     <% if place.photos.present? %>
       <div>
         <blockquote>
-          <%= image_tag place.photos.last.picture %>
+          <%= image_tag place.photos.last.picture, class: 'img-fluid' %>
           <%= place.photos.last.caption %>
           <small><%= place.photos.last.user.email %></small>
         </blockquote>
