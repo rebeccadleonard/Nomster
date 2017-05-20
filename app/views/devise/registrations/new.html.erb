@@ -6,6 +6,9 @@
 
     <div class="form-inputs">
       <%= f.input :email, required: true, autofocus: true %>
+      <!--**Since email is displayed on the homepage, if you would like your real email to stay private, feel free to use a disposable email from here https://www.guerrillamail.com/** -->
+      <br />
+      <br />
       <!-- change 6 character minimum to be inside the box -->
       <%= f.input :password, required: true, hint: ("#{@minimum_password_length} characters minimum" if @minimum_password_length) %>
       <%= f.input :password_confirmation, required: true %>
