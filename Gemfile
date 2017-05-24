@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+gem 'bootstrap4-kaminari-views'
 
 gem "fog"
 

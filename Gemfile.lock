@@ -46,6 +46,9 @@ GEM
     bootstrap (4.0.0.alpha6)
       autoprefixer-rails (>= 6.0.3)
       sass (>= 3.4.19)
+    bootstrap4-kaminari-views (1.0.0)
+      kaminari (>= 0.13)
+      rails (>= 3.1)
     builder (3.2.3)
     byebug (9.0.6)
     carrierwave (1.0.0)
@@ -336,6 +339,7 @@ PLATFORMS
 
 DEPENDENCIES
   bootstrap (~> 4.0.0.alpha6)
+  bootstrap4-kaminari-views
   byebug
   carrierwave (~> 1.0)
   coffee-rails (~> 4.2)
